@@ -1,0 +1,30 @@
+.navigate {
+  & .btn {
+    color: #888;
+    background-color: #000;
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  & .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    width: max-content;
+    margin: 30px auto;
+
+    & .gridItem {
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      width: 250px;
+      height: 250px;
+
+      & .box {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
